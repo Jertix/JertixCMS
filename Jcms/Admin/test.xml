@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<record>
+	<id>1</id>
+	<nome> nome1 </nome>
+	<cognome> cognome1</cognome>
+	<piva> piva1 </piva>
+	</record>
+	<record>
+	<id>2</id>
+	<nome>nome2 </nome>
+	<cognome>cognome2 </cognome>
+	</record>
+	<record>
+	<id>3</id>
+	<nome>nome3 </nome>
+	<piva>piva3 </piva>
+	</record>
+</root>

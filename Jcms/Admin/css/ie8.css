@@ -1,0 +1,28 @@
+.form.checkbox {
+	padding: 11px 0 11px;
+}
+.form.checkbox .label {
+	margin-top: 8px;	
+}
+.form.checkbox .input span {
+	top: 8px;
+}
+.form.checkbox .baloon {
+	top: -1px;
+}
+.form.radio .input span {
+	top: 8px;
+}
+.submit:hover {
+	color: #999;
+	border: 1px solid #BCBCBC;
+}
+#content {
+	margin-left: 340px;	
+}
+#left {
+	width: 335px;
+}
+.sidebar-left {
+	width: 335px; 
+}

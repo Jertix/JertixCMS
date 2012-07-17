@@ -1,0 +1,182 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" AutoEventWireup="true" Inherits="Admin_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JCMS Admin</title>
+
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="shortcut icon" href="favicon.ico" />	
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css"/><![endif]-->	
+	<!-- [JavaScripts] -->    
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>   
+	<script type="text/javascript" src="js/script.js"></script>	
+	<asp:Literal ID="litTinyInclude" runat="server"></asp:Literal>
+
+</head>
+<body>
+<form id="FormAdmin" runat="server">
+<%--    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>--%>
+
+    
+	<asp:Literal ID="litEditArea" runat="server"></asp:Literal> 
+	<asp:Literal ID="litjQueryContextMenu" runat="server"></asp:Literal> 
+	<asp:Literal ID="litjQueryContextMenuAdministrator" runat="server"></asp:Literal> 
+
+    <asp:Literal ID="litTinyFunction" runat="server"></asp:Literal>
+    <asp:Literal ID="litjQueryVariousScripts" runat="server"></asp:Literal>
+
+<%--        </ContentTemplate>
+    </asp:UpdatePanel>--%>
+
+<!-- [Header] -->
+<div id="header-wrapper">
+	<div id="header-wrapper-2">
+		<div id="header">	
+		
+			<!-- [Top Menu] -->
+			<div id="topmenu">
+	            <ul>
+					<li><asp:HyperLink ID="linkAnteprimaSito" runat="server" Target="_blank"></asp:HyperLink></li>
+		            <li><a href="#"><asp:Literal ID="litBenvenuto" runat="server"></asp:Literal> <strong><asp:Literal ID="litUserName" runat="server"></asp:Literal></strong></a></li>
+		            <li><a href="#">JCMS <asp:Literal ID="litcmsVersion" runat="server"></asp:Literal></a></li>
+		            <li class="last"><asp:LinkButton ID="linkLogOut" runat="server"></asp:LinkButton></li>		
+	            </ul>	
+			</div>
+			<!-- [/End Top Menu] -->
+			
+			<!-- [Main Menu] -->			
+			<div id="mainmenu">
+		        <ul>
+					<li class="mainmenu-home"><asp:Literal ID="litHomeAdmin" runat="server"></asp:Literal><img src="img/general/logo.png" alt="JCMS" /><asp:Literal ID="litHomeAdminCloseTag" runat="server"></asp:Literal><span class="mainmenu-separator"></span></li>
+			       	<li class="mainmenu-dashboard current"><a href="#"><span>Dashboard</span></a><span class="mainmenu-separator"></span></li>
+			       	<li class="mainmenu-settings"><a href="#"><span>Settings</span></a><span class="mainmenu-separator"></span></li>
+			       	<li class="mainmenu-help"><a href="#"><span>Help</span></a><span class="mainmenu-separator"></span></li>
+                    <li class="mainmenu-settings"><a href="FileBrowser.aspx" rel="shadowbox;width=1040"><span>Files</span></a></li>	
+                    <li class="mainmenu-settings"><a href="CreateCache.aspx" rel="shadowbox;width=1040"><span>Create Cache</span></a></li>
+                    <li class="mainmenu-settings"><a href="DeleteCache.aspx" rel="shadowbox;width=1040"><span>Delete Cache</span></a></li>
+                    <li class="mainmenu-settings"><a href="DeleteWebSite.aspx" rel="shadowbox;width=1040"><span>Delete WEB SITE</span></a></li>                    		
+		        </ul>		
+			</div>
+			<!-- [/End Main Menu] -->
+
+			<!-- [Buttons] -->			
+			<div id="buttons">
+	            <asp:Panel ID="PanelButtons" runat="server"></asp:Panel>
+                <ul style="display:none;">
+                    <li class="mainmenu-save"><a href="#"><span>Save</span></a><span class="mainmenu-separator"></span></li>
+                    <li class="mainmenu-preview"><a href="#"><span>Preview</span></a><span class="mainmenu-separator"></span></li>
+                    <li class="mainmenu-cancel"><a href="#"><span>Cancel</span></a><span class="mainmenu-separator"></span></li>
+                    <li class="mainmenu-delete"><a href="#"><span>Delete</span></a><span class="mainmenu-separator"></span></li>
+                    <li class="mainmenu-settings">
+                        <a href="#" class="mainmenu-add current"></a>
+                        <a href="#" class="mainmenu-edit"></a>
+                        <a href="#" class="mainmenu-close"></a>
+                        <span class="mainmenu-separator"></span>
+                    </li>
+                </ul>				
+			</div>
+			<!-- [/End Buttons] -->   	
+
+		</div><div class="shadow"></div>	
+	</div>
+</div>
+<!-- [/End Header] -->
+
+<!-- [Container] -->
+<div id="container">
+
+		<!-- [Left Menu] -->
+		<div id="left">
+
+			<!-- [Admin Menu] --> 	
+
+			<div class="sidebar-left"> 	
+<%--    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+        <ContentTemplate>--%>
+				<!-- [Admin Context Menu] -->       
+				<asp:Literal ID="litContextMenu" runat="server"></asp:Literal>
+				<!-- [/End Admin Context Menu] --> 
+							  
+				<h2><asp:Literal ID="litNomeSito" runat="server"></asp:Literal><span></span></h2>
+				<asp:Literal ID="litWebSiteTree" runat="server"></asp:Literal>
+
+				<!-- [/End Admin Menu] -->
+<%--        </ContentTemplate>
+    </asp:UpdatePanel>--%>
+			</div>
+			 
+		<div class="sidebar-left">
+			<h2>Installed Modules<span></span></h2>
+			<ul id="modules-admin" class="filetree">
+				<li><span class="folder"><a href="#">Modules</a></span>
+					<ul>
+                        <asp:Literal ID="litModulesList" runat="server"></asp:Literal>
+                    </ul> 				
+				</li>          
+			</ul>  		
+		</div>                       
+			
+			<!-- [Development Menu] --> 	
+			<div class="sidebar-left"> 
+<%--    <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+        <ContentTemplate>--%>			
+				<!-- [Development Context Menu] -->  	
+				<asp:Literal ID="litAdministratorContextMenu" runat="server"></asp:Literal>   
+				<!-- [/End Development Context Menu] -->
+				
+				<h2><asp:Literal ID="litAdmin" runat="server"></asp:Literal><span></span></h2>
+				<asp:Literal ID="litAdministrationTree" runat="server"></asp:Literal> 
+<%--        </ContentTemplate>
+    </asp:UpdatePanel>--%>				
+			</div>
+			<!-- [/End Development Menu] --> 
+			
+		</div>
+		<!-- [/End Left Menu] -->
+
+	<!-- [Content] -->
+	<div id="content">
+
+		<!-- [Tabs Wrapper] -->
+		<div class="tabs-wrapper">
+		
+			<h1 class="tabs-title"><span><asp:Literal ID="PageH1" runat="server"></asp:Literal></span></h1>		
+		
+    <!-- the tabs -->
+		
+			<!-- [The Tabs] -->
+			<ul class="tabs">
+				<asp:Literal ID="tabsList" runat="server"></asp:Literal>
+			</ul>
+			<!-- [/End The Tabs] -->			
+			
+			<!-- [Panes] -->
+			<div class="panes">	
+                    <asp:ContentPlaceHolder ID="ContentRight" runat="server"></asp:ContentPlaceHolder>
+            </div>
+			<!-- [/End Panes] -->			
+
+    </div>
+    <!-- End Right -->   
+
+	</div>
+	<!-- [/End Content] -->
+
+    </div><!-- End Container -->  
+
+<%--    <asp:UpdatePanel ID="UpdatePanel4" runat="server">
+        <ContentTemplate>--%>	
+            <asp:Literal ID="litMessagges" runat="server"></asp:Literal>
+<%--        </ContentTemplate>
+    </asp:UpdatePanel>--%>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appSettings>
+    <!-- Default REDIRECT if Page Not FOUND -->
+    <!-- in value you can use %sitename% as websitename ex: value="http://%sitename%/" -->
+    <add key="jCMSRedirectPathPageNotFound" value="http://%sitename%/public/en/search/?Mess=NotFound" />
+    <!-- END of REDIRECT -->
+    <!-- jCommerceConfiguration -->
+    <add key="jCommerceSite" value="https://enamoda.foxycart.com/" />
+    <add key="WebMasterMail" value ="jertix@gmail.com"/>
+    <add key="jCommerceApiToken" value="fredi" />
+    <add key="SmtpHost" value="lizzxu501.easydservers.com" />
+    <add key="SmtpPort" value="2626" />
+    <!-- END of jCommerceConfiguration -->
+  </appSettings>
+  <connectionStrings>
+    <add name="Shop" connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Shop.mdb;" />
+    <add name="jCMS" connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Data.mdb;" />
+  </connectionStrings>
+  <system.webServer>
+    <security>
+      <requestFiltering>
+        <fileExtensions>
+          <remove fileExtension=".mdb" />
+          <add fileExtension=".mdb" allowed="true" />
+        </fileExtensions>
+      </requestFiltering>
+    </security>
+    <defaultDocument>
+      <files>
+        <clear />
+        <add value="default.aspx" />
+        <add value="Default.htm" />
+        <add value="Default.asp" />
+        <add value="index.htm" />
+        <add value="index.html" />
+        <add value="iisstart.htm" />
+      </files>
+    </defaultDocument>
+        <rewrite>
+            <rules>
+                <rule name="Redirect domain to www" patternSyntax="Wildcard" stopProcessing="true">
+                    <match url="*" />
+                    <conditions>
+                        <add input="{HTTP_HOST}" pattern="enamoda.com" />
+                    </conditions>
+                    <action type="Redirect" url="http://www.enamoda.com/{R:0}" />
+                </rule>
+            </rules>
+        </rewrite>
+  </system.webServer>
+  <system.web>
+    <!--Per Directory.move-->
+    <!--<identity impersonate="true"
+                  userName=""
+                  password="" />-->
+    <!--<sessionState cookieless="true" timeout="20"></sessionState>-->
+    <!--<sessionState mode="StateServer"></sessionState>-->
+    <!--<sessionState mode="StateServer" timeout="180" stateConnectionString="tcpip=localhost:42424" cookieless="false"/>-->
+    <anonymousIdentification enabled="true" />
+    <!--<machineKey validationKey="88C7D498D47E8302E1E3008F03E7FE3FD2A650562E5AABAA41C5701F3DD40491A5F2779B685B0065346EDE68BF478FE37DDF97F2CD1863711A77175469072D73" decryptionKey="F535B9DC50EDD5681F8B39009300D50309C68460E1E6460F8E72B056873EB16D" validation="SHA1" decryption="AES" />-->
+    <!-- jCMS: FTP USER/PASSWORD - NEED TO WRITE IN FOLDERS -->
+    <authentication mode="Forms">
+      <forms name="jCMS" loginUrl="/login.aspx">
+        <credentials passwordFormat="SHA1">
+          <user name="187883@aruba.it" password="5c303370b9ca12e671b2a075d72407fb1aef0823" />
+        </credentials>
+        <!-- Not Encrypted Password
+        <credentials passwordFormat = "Clear"><user name="xxx" password="xxx"/></credentials>
+        -->
+      </forms>
+    </authentication>
+    <!-- jCMS: FTP USER / PASSWORD - NEED TO  -->
+    <profile>
+      <properties>
+        <!--
+        <remove name="LanguagePreference"/>
+        <add name="LanguagePreference" type="string" defaultValue="Auto" allowAnonymous="true" />
+        -->
+      </properties>
+    </profile>
+    <!-- <compilation debug="true" strict="false" explicit="true" targetFramework="4.0"> -->
+    <compilation debug="false" explicit="true" strict="false" targetFramework="4.0">
+      <assemblies>
+        <add assembly="System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+      </assemblies>
+    </compilation>
+    <globalization culture="auto:it-IT" uiCulture="auto:it" />
+    <customErrors mode="Off" />
+    <!--<pages enableEventValidation="false" viewStateEncryptionMode="Never" enableViewStateMac="false">-->
+    <pages controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID" validateRequest="false">
+      <controls>
+        <add namespace="AjaxControlToolkit" assembly="AjaxControlToolkit" tagPrefix="ajaxToolkit" />
+      </controls>
+    </pages>
+    <!--
+          Set compilation debug="true" to insert debugging
+          symbols into the compiled page. Because this
+          affects performance, set this value to true only
+          during development.
+    -->
+    <httpModules>
+      <!--<add name="ScriptModule" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>-->
+    </httpModules>
+    <httpHandlers>
+      <add verb="GET" path="CaptchaImage.aspx" type="WebControlCaptcha.CaptchaImageHandler, WebControlCaptcha" />
+    </httpHandlers>
+    <httpRuntime requestValidationMode="2.0" />
+  </system.web>
+  <system.net>
+    <mailSettings>
+      <smtp>
+        <network host="" port="25" />
+      </smtp>
+    </mailSettings>
+  </system.net>
+</configuration>

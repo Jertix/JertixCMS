@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="adminMenuAggiungiHomePage" xml:space="preserve">
+    <value>Aggiungi Home Page</value>
+  </data>
+  <data name="adminMenuAggiungiLingua" xml:space="preserve">
+    <value>Aggiungi/Rimuovi Lingua</value>
+  </data>
+  <data name="adminMenuAggiungiPagina" xml:space="preserve">
+    <value>Aggiungi Pagina</value>
+  </data>
+  <data name="adminMenuAggiungiTemplate" xml:space="preserve">
+    <value>Aggiungi un nuovo Template</value>
+  </data>
+  <data name="adminMenuLingua" xml:space="preserve">
+    <value>Lingua</value>
+  </data>
+  <data name="btnAggiungiLingua" xml:space="preserve">
+    <value>Aggiungi lingua</value>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Accedi</value>
+  </data>
+  <data name="btnRimuoviLingua" xml:space="preserve">
+    <value>Rimuovi lingua</value>
+  </data>
+  <data name="checkbox" xml:space="preserve">
+    <value>Ricorda</value>
+  </data>
+  <data name="lblMessaggio" xml:space="preserve">
+    <value>Verificare che il nome utente e la password siano inseriti correttamente</value>
+  </data>
+  <data name="linkAnteprimaSito" xml:space="preserve">
+    <value>Anteprima sito</value>
+  </data>
+  <data name="linkLogOut" xml:space="preserve">
+    <value>Esci (Logout)</value>
+  </data>
+  <data name="litAdmin" xml:space="preserve">
+    <value>Amministrazione</value>
+  </data>
+  <data name="litBenvenuto" xml:space="preserve">
+    <value>Benvenuto</value>
+  </data>
+  <data name="litDescriptionAddHomePage" xml:space="preserve">
+    <value>la pagina verrà aggiunta in base alla lingua selezionata.</value>
+  </data>
+  <data name="litDescriptionAddLanguage" xml:space="preserve">
+    <value>Aggiungi o rimuovi una lingua al sito, una volta aggiunta la lingua, nel menu ad albero verrà visualizzata l'abbreviazione della lingua, e si potranno aggiungere le pagine collegate ad essa</value>
+  </data>
+  <data name="litH1AddHomePage" xml:space="preserve">
+    <value>Aggiungi Home Page</value>
+  </data>
+  <data name="litH1AddLanguage" xml:space="preserve">
+    <value>Aggiungi o rimuovi una lingua al sito</value>
+  </data>
+  <data name="litHelpMessaggioLingue" xml:space="preserve">
+    <value>Selezionare la lingua da aggiungere o da rimuovere alla struttura del sito</value>
+  </data>
+  <data name="litHelpMessaggioPassword" xml:space="preserve">
+    <value>Inserire la password</value>
+  </data>
+  <data name="litHelpMessaggioUserName" xml:space="preserve">
+    <value>Inserire il nome utente</value>
+  </data>
+  <data name="litRichiediSupporto" xml:space="preserve">
+    <value>Richiedi supporto tecnico</value>
+  </data>
+  <data name="litSelLingua" xml:space="preserve">
+    <value>Selezionare una lingua da aggiungere</value>
+  </data>
+  <data name="litTuttiIDiritti" xml:space="preserve">
+    <value>Tutti i diritti riservati</value>
+  </data>
+  <data name="lnkPassDimenticata" xml:space="preserve">
+    <value>Password dimenticata?</value>
+  </data>
+  <data name="okLinguaAggiunta" xml:space="preserve">
+    <value>La lingua selezionata è stata aggiunta alla struttura del sito</value>
+  </data>
+  <data name="okLinguaRimossa" xml:space="preserve">
+    <value>La lingua seleziata è stata rimossa dalla struttura del sito</value>
+  </data>
+  <data name="strLogin" xml:space="preserve">
+    <value>Login di</value>
+  </data>
+  <data name="strPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="strUserName" xml:space="preserve">
+    <value>Nome Utente</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="warningLinguaEsiste" xml:space="preserve">
+    <value>Attenzione, la lingua selezionata è già presente nella struttura del sito.</value>
+  </data>
+  <data name="warningLinguaNonEsiste" xml:space="preserve">
+    <value>Attenzione, la lingua selezionata non è presente nella struttura del sito.</value>
+  </data>
+  <data name="adminMenuEliminaTemplate" xml:space="preserve">
+    <value>Elimina un Template</value>
+  </data>
+  <data name="adminMenuModificaTemplate" xml:space="preserve">
+    <value>Modifica un Template</value>
+  </data>
+  <data name="btnSalvaNuovoTemplate" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="litDescriptionAddTemplate" xml:space="preserve">
+    <value>un Template può contenere HTML, funzioni jertixCMS e plugin. La funzione dei Template è di regolare la grafica delle pagine del sito.</value>
+  </data>
+  <data name="litH1AddTemplate" xml:space="preserve">
+    <value>Nuovo Template</value>
+  </data>
+  <data name="litHelpMessaggioTemplate" xml:space="preserve">
+    <value>Selezionando un Template da quelli elencati qui sotto potrai utilizzarne il codice come base per il modello che si sta creando</value>
+  </data>
+  <data name="litSelTemplate" xml:space="preserve">
+    <value>Seleziona Template</value>
+  </data>
+  <data name="litHelpMessaggioTitoloTemplate" xml:space="preserve">
+    <value>Scrivi qui un titolo per il nuovo modello che si sta creando</value>
+  </data>
+  <data name="litTemplateName" xml:space="preserve">
+    <value>Nome Template</value>
+  </data>
+  <data name="litTextTemplate" xml:space="preserve">
+    <value>Testo del Template (in HTML)</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>-- Selezionare --</value>
+  </data>
+  <data name="messErroreTemplate" xml:space="preserve">
+    <value>Attenzione, il Template non può essere salvato perchè ne esitise un altro con lo stesso nome, modificare il nome prima di salvare</value>
+  </data>
+  <data name="messErroreTemplateNullo" xml:space="preserve">
+    <value>Attenzione, occorre inserire un nome al Template prima di poterlo salvare</value>
+  </data>
+  <data name="messTemplateSalvato" xml:space="preserve">
+    <value>Il nuovo Template è stato salvato</value>
+  </data>
+  <data name="btnSalvaModificheTemplate" xml:space="preserve">
+    <value>Salva modifiche</value>
+  </data>
+  <data name="CopiaDi" xml:space="preserve">
+    <value>Copia di </value>
+  </data>
+  <data name="litDescriptionEditTemplate" xml:space="preserve">
+    <value>un Template può contenere HTML, funzioni jertixCMS e plugin. La funzione dei Template è di regolare la grafica delle pagine del sito.</value>
+  </data>
+  <data name="litEditTemplateName" xml:space="preserve">
+    <value>Nome Template</value>
+  </data>
+  <data name="litH1EditTemplate" xml:space="preserve">
+    <value>Modifica Template</value>
+  </data>
+  <data name="litHelpMessaggioEditTemplate" xml:space="preserve">
+    <value>Seleziona il template da modificare dalla lista</value>
+  </data>
+  <data name="litHelpMessaggioEditTitoloTemplate" xml:space="preserve">
+    <value>Scrivi il nome del Template</value>
+  </data>
+  <data name="messErroreTemplateEsistente" xml:space="preserve">
+    <value>Impossibile salvare, il nome del template inserito è utilizzato da un altro Template</value>
+  </data>
+  <data name="messTemplateAggiornato" xml:space="preserve">
+    <value>Il Template è stato aggiornato</value>
+  </data>
+  <data name="messErroreTemplateNonSelezionato" xml:space="preserve">
+    <value>Attenzione, occorre selezionare un Template prima di premere il tasto salva</value>
+  </data>
+  <data name="btnEliminaTemplate" xml:space="preserve">
+    <value>Elimina Template</value>
+  </data>
+  <data name="litDescriptionDeleteTemplate" xml:space="preserve">
+    <value>Seleziona il Template da eliminare, attenzione, se il Template è utilizzato da qualche pagina non potrà essere eliminato</value>
+  </data>
+  <data name="litH1DeleteTemplate" xml:space="preserve">
+    <value>Elimina Template</value>
+  </data>
+  <data name="litHelpMessaggioDeleteTemplate" xml:space="preserve">
+    <value>Seleziona il Template da eliminare</value>
+  </data>
+  <data name="messErroreTemplateDaEliminareNonSelezionato" xml:space="preserve">
+    <value>Attenzione, occorre selezionare il Template da eliminare prima di premere il tasto elimina</value>
+  </data>
+  <data name="messTemplateEliminato" xml:space="preserve">
+    <value>Il Template è stato eliminato</value>
+  </data>
+  <data name="litHelpMessaggioTemplateInAddPage" xml:space="preserve">
+    <value>Selezionando un Template da quelli elencati qui sotto potrai utilizzarne il codice come base per la pagina che si sta creando</value>
+  </data>
+  <data name="adminMenuAggiungiChunk" xml:space="preserve">
+    <value>Aggiungi nuovo Chunk</value>
+  </data>
+  <data name="adminMenuAggiungiTemplateVariable" xml:space="preserve">
+    <value>Aggiungi Variabile di Template</value>
+  </data>
+  <data name="adminMenuEliminaChunk" xml:space="preserve">
+    <value>Elimina Chunk</value>
+  </data>
+  <data name="adminMenuEliminaTemplateVariable" xml:space="preserve">
+    <value>Elimina Variabile di Template</value>
+  </data>
+  <data name="adminMenuModificaChunk" xml:space="preserve">
+    <value>Modifica Chunk</value>
+  </data>
+  <data name="adminMenuModificaTemplateVariable" xml:space="preserve">
+    <value>Modifica Variabile di Template</value>
+  </data>
+  <data name="btnSalvaNuovaCategoria" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="btnSalvaNuovoChunk" xml:space="preserve">
+    <value>Salva Chunk</value>
+  </data>
+  <data name="ChunksName" xml:space="preserve">
+    <value>Chunks</value>
+  </data>
+  <data name="lblNuovaCategoria" xml:space="preserve">
+    <value>Nome categoria:</value>
+  </data>
+  <data name="LinkButtonNuovaCategoria" xml:space="preserve">
+    <value>Aggiungi nuova categoria...</value>
+  </data>
+  <data name="litChunkName" xml:space="preserve">
+    <value>Nome Chunk</value>
+  </data>
+  <data name="litDescriptionAddChunk" xml:space="preserve">
+    <value>un chunk è un "pezzo" di codice HTML che può contenere anche comandi del CMS e potrà essere facilmente inserito nei Template</value>
+  </data>
+  <data name="litH1AddChunk" xml:space="preserve">
+    <value>Nuovo Chunk</value>
+  </data>
+  <data name="litHelpMessaggioCategorieChunk" xml:space="preserve">
+    <value>Selezionare una categoria da quelle elencate affianco, le categorie servono per raggruppare i Chunk</value>
+  </data>
+  <data name="litHelpMessaggioChunk" xml:space="preserve">
+    <value>Selezionando un Chunk da quelli elencati qui affianco potrai richiamarne il codice da utilizzare come base per il nuovo Chunk che si sta creando</value>
+  </data>
+  <data name="litHelpMessaggioTitoloChunk" xml:space="preserve">
+    <value>Inserisci qui il titolo del Chunk</value>
+  </data>
+  <data name="litSelCategoriaChunk" xml:space="preserve">
+    <value>Seleziona categoria</value>
+  </data>
+  <data name="litSelChunk" xml:space="preserve">
+    <value>Importa Chunk</value>
+  </data>
+  <data name="litTextChunk" xml:space="preserve">
+    <value>Testo del Chunk (In HTML)</value>
+  </data>
+  <data name="messChunkCategoriaAggiunta" xml:space="preserve">
+    <value>Categoria aggiunta.</value>
+  </data>
+  <data name="messChunkSalvato" xml:space="preserve">
+    <value>Il nuovo Chunk è stato salvato</value>
+  </data>
+  <data name="messErroreChunk" xml:space="preserve">
+    <value>Attenzione, il Chunk non può essere salvato perchè ne esiste un altro con lo stesso nome</value>
+  </data>
+  <data name="messErroreChunkNullo" xml:space="preserve">
+    <value>Attenzione, inserire un nome al Chunk</value>
+  </data>
+  <data name="messWarningCategoriaEsistente" xml:space="preserve">
+    <value>Attenzione, la categoria che si vuole aggiungere è già presente</value>
+  </data>
+  <data name="messWarningInserireCategoria" xml:space="preserve">
+    <value>Inserire il nome della nuova categoria da salvare.</value>
+  </data>
+  <data name="TemplateVariableName" xml:space="preserve">
+    <value>Variabile di Template</value>
+  </data>
+  <data name="btnSalvaNuovoTemplateVariable" xml:space="preserve">
+    <value>Salva Variabile</value>
+  </data>
+  <data name="litDescriptionAddTemplateVariable" xml:space="preserve">
+    <value>una Variabile di Template è un campo personalizzato che appare durante la creazione e modifica delle pagine. Una Variabile di Template può essere ad esempio un campo di testo, un immagine, un video, un pezzo di codice HTML, ecc..</value>
+  </data>
+  <data name="litH1AddTemplateVariable" xml:space="preserve">
+    <value>Nuova Variabile di Template</value>
+  </data>
+  <data name="litHelpMessaggioCategorieTemplateVariable" xml:space="preserve">
+    <value>Selezionare una categoria da quelle elencate affianco, le categorie servono per raggruppare le Variabili di Template.</value>
+  </data>
+  <data name="litHelpMessaggioTitoloTemplateVariable" xml:space="preserve">
+    <value>Inserisci qui il nome della Variabile di Template. Questo valore verrà utilizzato per richiamare la Variabile all'interno dei Template ed all'interno dei Chunks.&lt;br /&gt;&lt;br /&gt; Questo testo non sarà visibile agli utenti.</value>
+  </data>
+  <data name="litSelCategoriaTemplateVariable" xml:space="preserve">
+    <value>Seleziona categoria</value>
+  </data>
+  <data name="litTemplateVariableName" xml:space="preserve">
+    <value>Nome Variabile</value>
+  </data>
+  <data name="litHelpMessaggioElencoTipiTemplateVariable" xml:space="preserve">
+    <value>Seleziona di che tipo sarà la Variabile che si sta aggiungendo</value>
+  </data>
+  <data name="litSelTipoTemplateVariable" xml:space="preserve">
+    <value>Tipo di Variabile</value>
+  </data>
+  <data name="TemplateVariableDate" xml:space="preserve">
+    <value>Date (Data)</value>
+  </data>
+  <data name="TemplateVariableImage" xml:space="preserve">
+    <value>Image (Immagine)</value>
+  </data>
+  <data name="TemplateVariableLink" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="TemplateVariableNumber" xml:space="preserve">
+    <value>Number (Numero)</value>
+  </data>
+  <data name="TemplateVariableText" xml:space="preserve">
+    <value>Text (Testo semplice)</value>
+  </data>
+  <data name="TemplateVariableTextArea" xml:space="preserve">
+    <value>TextArea (Area di testo)</value>
+  </data>
+  <data name="TemplateVariableTextAreaEditor" xml:space="preserve">
+    <value>TextArea with HTMLEditor (Area di testo con Editor)</value>
+  </data>
+  <data name="TemplateVariableVideo" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="litHelpMessaggioDescrizioneTemplateVariable" xml:space="preserve">
+    <value>Inserisci una breve descrizione, comparirà nei tooltips che si trovano alla destra di ogni campo e servirà per fornire all'utente informazioni dettagliate sulla Variabile di Template.</value>
+  </data>
+  <data name="litTemplateVariableDescription" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="litSelChkTemplate" xml:space="preserve">
+    <value>Seleziona a quali Template attribuire la Variabile</value>
+  </data>
+  <data name="litHelpMessaggioCaptionTemplateVariable" xml:space="preserve">
+    <value>Inserisci una breve didascalia, comparirà alla sinistra del campo e servirà per informare l'utente sulla funzione della Variabile di Template.</value>
+  </data>
+  <data name="litTemplateVariableCaption" xml:space="preserve">
+    <value>Didascalia</value>
+  </data>
+  <data name="messErroreNoTemplateSelected" xml:space="preserve">
+    <value>Attenzione, selezionare almeno 1 Template prima di poter salvare la nuova Variabile di Template</value>
+  </data>
+  <data name="messErroreTV" xml:space="preserve">
+    <value>Attenzione, esiste già una Variabile di Template con lo stesso nome.</value>
+  </data>
+  <data name="messErroreTVCaptionNulla" xml:space="preserve">
+    <value>Attenzione, la didascalia della Variabile di Template non può essere nulla</value>
+  </data>
+  <data name="messErroreTVCategoriaNulla" xml:space="preserve">
+    <value>Attenzione, occorre selezionare una categoria in cui inserire la nuova Variaibile di Template</value>
+  </data>
+  <data name="messErroreTVNulla" xml:space="preserve">
+    <value>Attenzione, il nome della Variabile di Template non può essere nullo</value>
+  </data>
+  <data name="messTVSalvata" xml:space="preserve">
+    <value>La nuova Variabile di Template è stata salvata.</value>
+  </data>
+  <data name="tabsHome" xml:space="preserve">
+    <value>Generale, Impostazioni Pagina</value>
+  </data>
+  <data name="litHelpMessaggioMetaDescription" xml:space="preserve">
+    <value>Inserire una brave descrizione della pagina</value>
+  </data>
+  <data name="litHelpMessaggioTitoloH1" xml:space="preserve">
+    <value>Inserire un titolo per i tag H1 dentro la pagina</value>
+  </data>
+  <data name="litHelpMessaggioPageTitle" xml:space="preserve">
+    <value>Inserire il titolo della pagina</value>
+  </data>
+  <data name="litMetaDescriptionCaption" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="litTitleH1Caption" xml:space="preserve">
+    <value>Titolo nella pagina</value>
+  </data>
+  <data name="litPageTitleCaption" xml:space="preserve">
+    <value>Titolo della pagina</value>
+  </data>
+  <data name="litImportTemplate" xml:space="preserve">
+    <value>Importa Template</value>
+  </data>
+  <data name="adminMenuModificaHomePage" xml:space="preserve">
+    <value>Modifica Home Page</value>
+  </data>
+  <data name="litDescrizioneBreveMenu" xml:space="preserve">
+    <value>Voce di Menu</value>
+  </data>
+  <data name="litHelpMessaggioDescrizioneVoceDiMenu" xml:space="preserve">
+    <value>Inserire il nome della voce di menu dove comparirà questa pagina</value>
+  </data>
+  <data name="tabsChunk" xml:space="preserve">
+    <value>Generale, Impostazione Gruppi</value>
+  </data>
+  <data name="litHelpMessaggioPageContent" xml:space="preserve">
+    <value>Inserisci qui il contenuto principale della pagina</value>
+  </data>
+  <data name="litPageContent" xml:space="preserve">
+    <value>Contenuto</value>
+  </data>
+  <data name="litDescriptionEditChunkCategory" xml:space="preserve">
+    <value>una Categoria serve a raggruppare i chunk.</value>
+  </data>
+  <data name="litH1EditChunkCategory" xml:space="preserve">
+    <value>Modifica il nome della Categoria</value>
+  </data>
+  <data name="litHelpMessaggioCategorieChunkEdit" xml:space="preserve">
+    <value>Modifica il nome della categoria del chunk</value>
+  </data>
+  <data name="litEditChunkCategoryName" xml:space="preserve">
+    <value>Nome Categoria</value>
+  </data>
+  <data name="messChunkCategoriaModificata" xml:space="preserve">
+    <value>Categoria modificata.</value>
+  </data>
+  <data name="messWarningSelezionaCategoria" xml:space="preserve">
+    <value>Selezionare una categoria</value>
+  </data>
+  <data name="messChunkCategoriaEsistente" xml:space="preserve">
+    <value>Esiste già una categoria con quel nome</value>
+  </data>
+  <data name="litH1DeleteChunkCategory" xml:space="preserve">
+    <value>Elimina la Categoria</value>
+  </data>
+  <data name="litDescriptionDeleteChunkCategory" xml:space="preserve">
+    <value>Seleziona la categoria da eliminare. (Attenzione, verranno eliminati tutti i chunk presenti nella categoria)</value>
+  </data>
+  <data name="btnEliminaCategoria" xml:space="preserve">
+    <value>Elimina Categoria</value>
+  </data>
+  <data name="messChunkCategoryDeleted" xml:space="preserve">
+    <value>Categoria eliminata.</value>
+  </data>
+  <data name="litH1AddChunkCategory" xml:space="preserve">
+    <value>Aggiungi Categoria ai Chunks</value>
+  </data>
+  <data name="litDescriptionAddChunkCategory" xml:space="preserve">
+    <value>Aggiungi una nuova categoria ai chunks</value>
+  </data>
+  <data name="litExistingCategories" xml:space="preserve">
+    <value>Categorie Esistenti</value>
+  </data>
+  <data name="litHelpMessaggioCategorieChunkEsistenti" xml:space="preserve">
+    <value>Elenco delle categorie esistenti</value>
+  </data>
+  <data name="litAddCategoryName" xml:space="preserve">
+    <value>Nome Categoria</value>
+  </data>
+  <data name="litHelpMessaggioCategorieChunkAdd" xml:space="preserve">
+    <value>Scrivi il nome della nuova categoria da creare</value>
+  </data>
+  <data name="btnAddNewCategory" xml:space="preserve">
+    <value>Aggiungi Categoria</value>
+  </data>
+  <data name="adminMenuAggiungiChunkCategory" xml:space="preserve">
+    <value>Aggiungi nuova categoria</value>
+  </data>
+  <data name="litDescriptionEditChunk" xml:space="preserve">
+    <value>un chunk è un "pezzo" di codice HTML che può contenere anche comandi del CMS e potrà essere facilmente inserito nei Template</value>
+  </data>
+  <data name="litH1EditChunk" xml:space="preserve">
+    <value>Modifica Chunk</value>
+  </data>
+  <data name="btnSalvaModificheChunk" xml:space="preserve">
+    <value>Salva modifiche chunk</value>
+  </data>
+  <data name="messChunkAggiornato" xml:space="preserve">
+    <value>Il chunk è stato aggiornato</value>
+  </data>
+  <data name="litDescriptionDeleteChunk" xml:space="preserve">
+    <value>Seleziona il chunk da eliminare</value>
+  </data>
+  <data name="litH1DeleteChunk" xml:space="preserve">
+    <value>Elimina il chunk</value>
+  </data>
+  <data name="litHelpMessaggioChunkDelete" xml:space="preserve">
+    <value>Selezionare il chunk da eliminare dall'elenco</value>
+  </data>
+  <data name="litSelectChunk" xml:space="preserve">
+    <value>Selezionare il chunk</value>
+  </data>
+  <data name="btnEliminaChunk" xml:space="preserve">
+    <value>Elimina Chunk</value>
+  </data>
+  <data name="messWarningSelezionaChunk" xml:space="preserve">
+    <value>Selezionare il chunk da eliminare</value>
+  </data>
+  <data name="messChunkDeleted" xml:space="preserve">
+    <value>Chunk eliminato</value>
+  </data>
+  <data name="adminMenuAggiungiTVCategory" xml:space="preserve">
+    <value>Aggiungi nuova categoria</value>
+  </data>
+  <data name="litH1AddTVCategory" xml:space="preserve">
+    <value>Aggiungi Categoria alle Variabili di Template</value>
+  </data>
+  <data name="litDescriptionAddTVCategory" xml:space="preserve">
+    <value>Aggiungi nuova categoria per raggruppare le TV</value>
+  </data>
+  <data name="litExistingCategoriesTV" xml:space="preserve">
+    <value>Categorie Esistenti</value>
+  </data>
+  <data name="litHelpMessaggioCategorieTVEsistenti" xml:space="preserve">
+    <value>Elenco delle categorie esistenti</value>
+  </data>
+  <data name="litAddTVCategoryName" xml:space="preserve">
+    <value>Nome Categoria</value>
+  </data>
+  <data name="litHelpMessaggioCategorieTVAdd" xml:space="preserve">
+    <value>Scrivi il nome della nuova categoria da creare</value>
+  </data>
+  <data name="btnAddNewTVCategory" xml:space="preserve">
+    <value>Aggiungi categoria</value>
+  </data>
+  <data name="litH1EditTVCategory" xml:space="preserve">
+    <value>Modifica categoria</value>
+  </data>
+  <data name="litDescriptionEditTVCategory" xml:space="preserve">
+    <value>Modifica il nome della categoria</value>
+  </data>
+  <data name="btnSalvaModificheTVCategory" xml:space="preserve">
+    <value>Salva modifiche</value>
+  </data>
+  <data name="litDescriptionDeleteTVCategory" xml:space="preserve">
+    <value>Seleziona la categoria da eliminare</value>
+  </data>
+  <data name="litEditTVCategoryName" xml:space="preserve">
+    <value>Nome Categoria</value>
+  </data>
+  <data name="litH1DeleteTVCategory" xml:space="preserve">
+    <value>Elimina categoria</value>
+  </data>
+  <data name="litHelpMessaggioCategorieTV" xml:space="preserve">
+    <value>Lista delle categorie già presenti</value>
+  </data>
+  <data name="litHelpMessaggioCategorieTVEdit" xml:space="preserve">
+    <value>Scrivi qui il nuovo nome per la categoria</value>
+  </data>
+  <data name="litSelTVCategory" xml:space="preserve">
+    <value>Seleziona categoria</value>
+  </data>
+  <data name="messTVCategoriaModificata" xml:space="preserve">
+    <value>Categoria modificata</value>
+  </data>
+  <data name="messTVCategoryDeleted" xml:space="preserve">
+    <value>Categoria eliminata</value>
+  </data>
+  <data name="btnEliminaTV" xml:space="preserve">
+    <value>Elimina</value>
+  </data>
+  <data name="litDescriptionDeleteTV" xml:space="preserve">
+    <value>Seleziona una TV da eliminare</value>
+  </data>
+  <data name="litH1DeleteTV" xml:space="preserve">
+    <value>Elimina TV</value>
+  </data>
+  <data name="litHelpMessaggioTVDelete" xml:space="preserve">
+    <value>Selezionare la Tv da eliminare</value>
+  </data>
+  <data name="litSelectTV" xml:space="preserve">
+    <value>Selezionare la TV</value>
+  </data>
+  <data name="messTVDeleted" xml:space="preserve">
+    <value>TV Eliminata</value>
+  </data>
+  <data name="messWarningSelezionaTV" xml:space="preserve">
+    <value>Selezionare una TV</value>
+  </data>
+  <data name="litDescriptionEditTemplateVariable" xml:space="preserve">
+    <value>Modifica la variabile di template</value>
+  </data>
+  <data name="litH1EditTemplateVariable" xml:space="preserve">
+    <value>Modifica Variabile di Template</value>
+  </data>
+  <data name="tabsTemplate" xml:space="preserve">
+    <value>Generale, Parametri</value>
+  </data>
+  <data name="litHelpMessaggioTestoTemplate" xml:space="preserve">
+    <value>Inserire il codice del Template</value>
+  </data>
+  <data name="litCommand" xml:space="preserve">
+    <value>Comando CMS</value>
+  </data>
+  <data name="litHelpMessaggioComandiCMS" xml:space="preserve">
+    <value>Seleziona dalle relative liste per generare un comando del CMS</value>
+  </data>
+  <data name="adminOpenInBrowser" xml:space="preserve">
+    <value>Visualizza la pagina</value>
+  </data>
+  <data name="litDescriptionEditComponent" xml:space="preserve">
+    <value>un Component è un comando che fa parte del modulo installato.</value>
+  </data>
+  <data name="litHelpMessaggioEditComponent" xml:space="preserve">
+    <value>Seleziona un modulo dalla lista</value>
+  </data>
+  <data name="litSelModule" xml:space="preserve">
+    <value>Modulo Selezionato</value>
+  </data>
+  <data name="tabsComponent" xml:space="preserve">
+    <value>Generale</value>
+  </data>
+  <data name="litH1EditComponent" xml:space="preserve">
+    <value>Modifica Componente</value>
+  </data>
+  <data name="litSelComponent" xml:space="preserve">
+    <value>Componente</value>
+  </data>
+  <data name="litHelpMessaggioSelComponent" xml:space="preserve">
+    <value>Seleziona un componente</value>
+  </data>
+  <data name="litEditComponentName" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="litHelpMessaggioComponentName" xml:space="preserve">
+    <value>Nome del componente</value>
+  </data>
+  <data name="litEditComponentFileName" xml:space="preserve">
+    <value>Nome del file (es.: test.ascx)</value>
+  </data>
+  <data name="litHelpMessaggioComponentFileName" xml:space="preserve">
+    <value>Inserire il nome del file del componente  (es.: test.ascx)</value>
+  </data>
+  <data name="litHelpMessaggioComponentExample" xml:space="preserve">
+    <value>Inserire qui il comando di esempio</value>
+  </data>
+  <data name="litTextComponentExample" xml:space="preserve">
+    <value>Comando di esempio</value>
+  </data>
+  <data name="btnSalvaModificheComponente" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="messErroreComponenteEModuloNonSelezionato" xml:space="preserve">
+    <value>Selezionare un modulo ed il relativo componente da modificare prima di premere il tasto salva</value>
+  </data>
+  <data name="messErroreNomeComponenteNullo" xml:space="preserve">
+    <value>Attenzione, il nome del componente non può essere nullo</value>
+  </data>
+  <data name="messErroreNomeFileComponenteNullo" xml:space="preserve">
+    <value>Attenzione, il nome del dile del componente non può essere nullo</value>
+  </data>
+  <data name="messErroreEsisteComponenteConStessoNome" xml:space="preserve">
+    <value>Attenzione, esiste un altro componente con lo stesso nome, impossibile salvare le modifiche</value>
+  </data>
+  <data name="messComponenteAggiornato" xml:space="preserve">
+    <value>Componente aggiornato</value>
+  </data>
+</root>
